@@ -4,11 +4,11 @@ class App
 {
     protected $controller = 'home';
     protected $method = 'index';
-    protected $parameters = [];
+    protected $params = [];
 
     public funtion _construct()
     {
-
+        $this->parseUrl();
     }
 
     public function parseUrl()
@@ -19,4 +19,4 @@ class App
         }
     }
    
-}
+} 
